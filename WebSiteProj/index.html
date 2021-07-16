@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="icon" href="Images/Warden.png">
+    <link rel="stylesheet" href="StandardStyle.css">
+    <script src="Scripts/StandardFunctions.js"></script>
+    <script src="Scripts/w3.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <div w3-include-html="Navigation.html"></div>
+
+    <div class="mainbody">
+        <p style="text-align: center;font-weight: bolder;">Welcome to my Website learning project!</p>
+        <p style="text-align: center;font-weight: bolder;">Use the nav pane on the left to get around</p>
+        <br>
+        <p>This site is about <a href="https://www.foxholegame.com">Foxhole</a> a Persistent MMO war game.</p>
+    </div>
+
+    <script>
+        w3.includeHTML(highlightCurrentNavLink);
+    </script>
+
+</body>
+
+</html>

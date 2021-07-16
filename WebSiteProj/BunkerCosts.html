@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bunker Costs</title>
+    <link rel="icon" href="Images/Warden.png">
+    <link rel="stylesheet" href="StandardStyle.css">
+    <script src="Scripts/StandardFunctions.js"></script>
+    <script src="Scripts/w3.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <div w3-include-html="Navigation.html"></div>
+
+    <div class="mainbody">
+        <form>
+            <fieldset>
+                <legend>Bunker Cost Calculator</legend>
+
+                <label for="bunkersize">Bunker Size:</label>
+                <input type="number" id="bunkersize" name="bunkersize" required style="width: 3em" />
+                <br>
+
+                <label for="tierlist">Bunker Tier:</label>
+                <select id="tierlist" name="tierlist" required>
+                    <option value="tier1">Tier 1</option>
+                    <option value="tier2">Tier 2</option>
+                    <option value="tier3">Tier 3</option>
+                </select>
+                <br>
+                <br>
+
+                <fieldset>
+                    <legend>Bunker Pieces</legend>
+
+                    <label for="bbCheck">Bunker Base:</label>
+                    <input type="checkbox" id="bbCheck" name="BunkerPieces" value="Bunker Base" />
+
+                    <label for="rgCheck">Rifle Garrison:</label>
+                    <input type="checkbox" id="rgCheck" name="BunkerPieces" value="Rifle Garrison" />
+
+                    <label for="mgCheck">Machine Gun Garrison:</label>
+                    <input type="checkbox" id="mgCheck" name="BunkerPieces" value="Machine Gun Garrison" />
+
+                    <label for="atCheck">AT Garrison:</label>
+                    <input type="checkbox" id="atCheck" name="BunkerPieces" value="AT Garrison" />
+
+                    <label for="howiCheck">Howitizer Garrison:</label>
+                    <input type="checkbox" id="howiCheck" name="BunkerPieces" value="Howitzer Garrison" />
+
+                    <label for="scCheck">Storm Cannon:</label>
+                    <input type="checkbox" id="scCheck" name="BunkerPieces" value="Storm Cannon" />
+
+                    <br><br>
+
+                    <label for="bbNum" hidden>
+                        Bunker Base Number:
+                        <input type="number" id="bbNum" name="bbNum" style="width: 3em" />
+                    </label>
+                    <br>
+
+                    <label for="rgNum" hidden>
+                        Rifle Garrison Number:
+                        <input type="number" id="rgNum" name="rgNum" style="width: 3em" />
+                    </label>
+                    <br>
+
+                    <label for="mgNum" hidden>
+                        Machine Gun Garrison Number
+                        <input type="number" id="mgNum" name="mgNum" style="width: 3em" />
+                    </label>
+                    <br>
+
+                    <label for="atNum" hidden>
+                        AT Garrison Number
+                        <input type="number" id="atNum" name="atNum" style="width: 3em" />
+                    </label>
+                    <br>
+
+                    <label for="howiNum" hidden>
+                        Howitizer Garrison Number
+                        <input type="number" id="howiNum" name="howiNum" style="width: 3em" />
+                    </label>
+                    <br>
+
+                    <label for="scNum" hidden>
+                        Storm Cannon Number
+                        <input type="number" id="scNum" name="scNum" style="width: 3em" />
+                    </label>
+
+                </fieldset>
+
+                <br>
+                <label for="calculatebutton">
+                    <input type="submit" id="calculatebutton" name="calculatebutton" value="Calculate Costs" />
+                </label>
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        w3.includeHTML(highlightCurrentNavLink);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bunkerCalc.js"></script>
+
+</body>
+
+</html>

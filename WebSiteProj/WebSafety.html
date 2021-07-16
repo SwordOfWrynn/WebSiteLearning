@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Safety</title>
+    <link rel="stylesheet" href="StandardStyle.css">
+    <script src="Scripts/StandardFunctions.js"></script>
+    <script src="Scripts/w3.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <div w3-include-html="Navigation.html"></div>
+
+    <div class="mainbody">
+        <h2>Remember to be safe on the web, and remember websites have access to some of your info</h2>
+        <p>Some info websites can get from you computer:</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <h3>Some helpful sites with Web Safety tips</h3>
+        <a
+            href="https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online">usa.kaspersky.com</a>
+        <p>Summary: Keep information professional and limited, keep privacy settings on, use secure internet
+            connections, be careful what you post and download</p>
+        <a
+            href="https://www.webroot.com/us/en/resources/tips-articles/online-activities-internet-security">webroot.com</a>
+        <p>Summary: Avoid questionable sites, only download from trusted sources, increase browser security settings,
+            and don't use email links</p>
+        <a href="https://www.getsafeonline.org/protecting-your-computer/safe-internet-use/">getsafeonline.org</a>
+        <p>Summary: Check URLs for small misspellings, check link destinations before you click on them, ensure you are
+            on a https site, and if you are suspicous of a site avoid it or do a web search on it</p>
+    </div>
+
+    <script>
+        "use strict"
+        w3.includeHTML(highlightCurrentNavLink);
+        document.getElementsByTagName("p")[1].innerHTML = "Web browser name: " + navigator.appName;
+        document.getElementsByTagName("p")[2].innerHTML = "Web browser version: " + navigator.appVersion;
+        document.getElementsByTagName("p")[3].innerHTML = "Operating Platform: " + navigator.platform;
+        document.getElementsByTagName("p")[4].innerHTML = "User agent: " + navigator.userAgent;
+        document.getElementsByTagName("p")[5].innerHTML = "Online: " + (navigator.onLine ? "Yes" : "No");
+        document.getElementsByTagName("p")[6].innerHTML = "Color Depth: " + screen.colorDepth;
+    </script>
+
+</body>
+
+</html>

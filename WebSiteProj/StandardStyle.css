@@ -1,0 +1,95 @@
+.sidelist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    background-color: lightslategray;
+    border: 2px solid black;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+.sidelist > li{
+    border-bottom: 1px solid black;
+}
+
+/* Style the nav headings elements that are not links */
+.navheading{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sidelink{
+    display: block;
+    color: antiquewhite;
+    padding: 4px 8px;
+    text-decoration: none;
+    text-align:center;
+    font-weight: bold;
+}
+
+/* Change the link color on hover */
+.sidelink:hover {
+    background-color: orangered;
+    color: white;
+  }
+
+  /* Change color of link to current page */
+.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+/* move the main content to side so nav is not over it */
+.mainbody{
+    margin-left: 125px;
+    padding: 0px 10px;
+    
+}
+
+.wardenheader {
+    color:blue;
+    border-bottom: thick solid black;
+}
+
+.colonialheader {
+    color:forestgreen;
+    border-bottom: thick solid black;
+}
+
+/* used for vehicle variant displays */
+.subtype {
+    border: medium dashed black;
+}
+
+.subtype *{
+    margin: 15px;
+}
+
+.subtype figure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+figure{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+figure figcaption{
+    text-align: center;
+}
+
+/* Used for quick testing */
+.test{
+    border: medium dashed black;
+}
